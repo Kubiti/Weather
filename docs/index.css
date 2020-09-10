@@ -5,7 +5,7 @@
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -13,7 +13,6 @@ body {
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(rgba(123, 123, 231, 0.5), rgb(143, 65, 207, 0.5));
-    background-repeat: no-repeat;
 }
 
 a {
@@ -25,7 +24,7 @@ a {
 
 /* ******************** HEADER ******************** */
 header {
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     text-align: center;
 }
 
@@ -145,7 +144,7 @@ article p {
 
 /* ******************** FOOTER ******************** */
 footer {
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 footer img {

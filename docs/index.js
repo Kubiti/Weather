@@ -42,7 +42,7 @@ submit.addEventListener('click', () => {
         celciusSign.innerHTML = '&#176;C'
         let descValue = data['weather']['0']['description'];
         let iconValue = data['weather']['0']['icon'];
-        let iconSrc = "http://openweathermap.org/img/wn/" + iconValue + "@2x.png";
+        let iconSrc = "./assets/weather_icons/" + iconValue + "@2x.png";
         let windValue = `${data['wind']['speed']}m/s ${directValue}`
         let humidValue = data['main']['humidity'];
         let pressureValue = data['main']['pressure'];
@@ -56,6 +56,10 @@ submit.addEventListener('click', () => {
         humidity.innerHTML = `Humidity: ${humidValue}%`;
         pressure.innerHTML = `Atmpospheric Pressure: ${pressureValue}hPa`
     })
-    .catch(err => console.log("Error loading city"))
+    .catch(err => {
+        console.log("Error loading city");
+        city.innerHTML = 'Error loading city, please refresh page and try again.';
+        time.innerHTML = '';
+    })
     }
 );

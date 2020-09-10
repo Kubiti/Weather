@@ -5,29 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="icon" href="../assets/Icon_Kumasi.png">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header>
         <h1>WEATHER FORECAST</h1>
-        <input type="text" name="city" placeholder="Search city">
         <nav>
             <a href="#">Hourly</a>
             <a href="#">5-Day</a>
             <a href="#">Weekly</a>
-            <a href="#">Monthly</a>
         </nav>
+        <input type="submit" id="submit" value="Submit">
+        <input type="search" name="city" id="city" placeholder="Search city or town">
+        
     </header>
     <main>
         <article>
-            <section>
-                <h2>Kumasi, Ashanti</h2>
-                <h2>Weather Now: </h2><p>8:00pm</p>
-                <h2>76&#176;C | &#176;F</h2>
-                <p>Wind:</p>
-                <p>Precipitation:</p>
-                <p>Humidity:</p>
+            <h2 id="location">Kumasi</h2><p id="time">8:00pm</p>
+            <section id="container">
+                <h2 id="temperature">76<sup>&#176;C | &#176;F</sup> </h2>
+                <div id="contLeft">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon" id="weatherIcon">
+                    <p id="description">Windy</p>
+                </div>
             </section>
+            <p id="wind">Wind:</p>
+            <p id="humidity">Humidity:</p>
+            <p id="pressure">Atmospheric Pressure:</p>
         </article>
     </main>
+    <footer>
+        <p id="copy">Copyright &copy; 2020</p> 
+        <section id="social"> <a href="https://github.com/Kubiti"><img src="../assets/github-brands.svg" alt="github link"></a>
+             <a href="https://www.facebook.com/samuel.kubiti.35"><img src="../assets/facebook.svg" alt="facebook link"></a>
+            <a href="https://www.instagram.com/kubitisamuel/"><img src="../assets/instagram.svg" alt="instagram link"></a> 
+        </section>
+   </footer>
+   <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>

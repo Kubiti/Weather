@@ -1,0 +1,167 @@
+/* ******************** GENERAL ******************** */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(123, 123, 231, 0.5), rgb(143, 65, 207, 0.5));
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+/* ******************** GENERAL ******************** */
+
+
+
+/* ******************** HEADER ******************** */
+header {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5%;
+}
+
+#city {
+    border-radius: 10px;
+    height: 2.5em;
+    width: 30em;
+    float: right;
+    padding: 0 2%;
+    margin-right: 0.5%;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+#city::placeholder {
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#submit {
+    float: right;
+    border-radius: 10px;
+    height: 2.5em;
+    float: right;
+    padding: 0 1%;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+header nav {
+    float: left;
+    font-size: 1.3em;
+}
+
+header nav a {
+    margin-right: 2em;
+}
+
+/* ******************** HEADER ******************** */
+
+
+
+/* ******************** MAIN ******************** */
+
+main article {
+    clear: both;
+    margin: 3% 0;
+}
+
+main h2 {
+    font-size: 2em;
+}
+
+#location {
+    display: inline-block;
+    margin-top: 2em;
+}
+
+#time {
+    display: inline;
+    margin-left: 0.9%;
+}
+
+#container {
+    display: flex;
+    text-align: center;
+}
+
+#temperature {
+    font-size: 15em;
+    margin: 0;
+    padding: 0;
+}
+
+#contLeft {
+    margin-top: -2em;
+    padding-left: 2em;
+    width: 50%;
+}
+
+#weatherIcon {
+    width: 50%;
+}
+
+#description {
+    font-size: 2em;
+    margin-top: -2em;
+    text-transform: capitalize;
+}
+
+sup {
+    position: relative;
+    bottom: 2rem;
+    font-size: 4rem;
+}
+
+article p {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+#wind {
+    margin-top: 2em;
+}
+
+/* ******************** MAIN ******************** */
+
+
+
+/* ******************** FOOTER ******************** */
+footer {
+    margin-top: 10%;
+}
+
+footer img {
+    height: 2em;
+}
+
+#copy {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+#social {
+    float: right;
+}
+
+footer a {
+    padding-right: 0.3em;
+}
+/* ******************** FOOTER ******************** */

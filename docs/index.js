@@ -7,7 +7,7 @@ humidity = document.getElementById('humidity'), pressure = document.getElementBy
 
 submit.addEventListener('click', () => {
 
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&APPID=530df0912db9cd46a24db04211fd0b82')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&APPID=530df0912db9cd46a24db04211fd0b82')
     .then(response => response.json())
     .then(data => {
         let countryCode = data["sys"]["country"];

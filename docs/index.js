@@ -1,18 +1,11 @@
-if ('serviceWorker' in navigator) {
-    console.log(navigator.serviceWorker);
-    navigator.serviceWokerContainer
-        .register('./service-worker.js')
-        .then(function(registration) {
-            console.log("Service worker Registered", registration);
-        })
-        .catch(function(err) {
-            console.log('Service worker failed to Register', err)
-        })
-}
-
-
-
-
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('./service-worker.js', { scope: './'})
+    .then(function(registration){
+      console.log("Service Worker registration succeeded. ");
+    }).catch(function(error){
+      console.error("Service Worker registration failed with error "+ error);
+    });
+  }
 
 
 let currentCity, inputValue = document.getElementById('city'), submit = document.getElementById('submit'),

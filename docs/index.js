@@ -1,14 +1,14 @@
-// if ('serviceWorker' in navigator) {
-//     console.log(navigator.serviceWorker);
-//     navigator.serviceWokerContainer
-//         .register('./service-worker.js')
-//         .then(function(registration) {
-//             console.log("Service worker Registered", registration);
-//         })
-//         .catch(function(err) {
-//             console.log('Service worker failed to Register', err)
-//         })
-// }
+if ('serviceWorker' in navigator) {
+    console.log(navigator.serviceWorker);
+    navigator.serviceWokerContainer
+        .register('./service-worker.js')
+        .then(function(registration) {
+            console.log("Service worker Registered", registration);
+        })
+        .catch(function(err) {
+            console.log('Service worker failed to Register', err)
+        })
+}
 
 
 

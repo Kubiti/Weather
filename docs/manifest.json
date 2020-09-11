@@ -7,28 +7,28 @@
     "orientation": "portrait-primary",
     "display": "standalone",
     "icons": [{
-        "src": "/android-chrome-192x192.png",
+        "src": "/assets/android-chrome-192x192.png",
         "sizes": "192x192",
         "type": "image/png"
     },
     {
-        "src": "/android-chrome-512x512.png",
+        "src": "/assets/android-chrome-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
     },
         {
-        "src": "Icon_Kumasi.png",
-        "type": "/assets", 
+        "src": "/assets/Icon_Kumasi.png",
+        "type": "image/png", 
         "sizes": "1000x634"
       },
       {
         "src": "Icon Kumasi.jpg",
-        "type": "/assets", 
+        "type": "image/jpg", 
         "sizes": "1000x634"
       },
       {
         "src": "Icon crop.jpg",
-        "type": "/assets", 
+        "type": "image/jpg", 
         "sizes": "1000x638"
       }
     ], 

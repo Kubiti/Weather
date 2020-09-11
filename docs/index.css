@@ -15,16 +15,14 @@ body {
     background: linear-gradient(rgba(123, 123, 231, 0.5), rgb(143, 65, 207, 0.5));
 }
 
-a {
-    text-decoration: none;
-}
+
 /* ******************** GENERAL ******************** */
 
 
 
 /* ******************** HEADER ******************** */
 header {
-    margin-bottom: 8%;
+    margin-bottom: 1%;
     text-align: center;
 }
 
@@ -37,7 +35,6 @@ header h1 {
     border-radius: 10px;
     height: 2.5em;
     width: 30em;
-    float: right;
     padding: 0 2%;
     margin-right: 0.5%;
     font-size: 1em;
@@ -52,24 +49,15 @@ header h1 {
 }
 
 #submit {
-    float: right;
     border-radius: 10px;
     height: 2.5em;
-    float: right;
     padding: 0 1%;
     font-size: 1em;
     font-weight: bold;
     border: none;
 }
 
-header nav {
-    float: left;
-    font-size: 1.3em;
-}
 
-header nav a {
-    margin-right: 2em;
-}
 
 /* ******************** HEADER ******************** */
 
@@ -78,8 +66,7 @@ header nav a {
 /* ******************** MAIN ******************** */
 
 main article {
-    clear: both;
-    margin: 3% 0;
+    padding-top: -2%;
 }
 
 main h2 {
@@ -103,8 +90,6 @@ main h2 {
 
 #temperature {
     font-size: 15em;
-    margin: 0;
-    padding: 0;
 }
 
 #contLeft {
@@ -135,7 +120,7 @@ article p {
 }
 
 #wind {
-    margin-top: 2em;
+    margin-top: 1.2em;
 }
 
 /* ******************** MAIN ******************** */
@@ -144,7 +129,7 @@ article p {
 
 /* ******************** FOOTER ******************** */
 footer {
-    margin-top: 8%;
+    margin-top: 1%;
 }
 
 footer img {
@@ -164,3 +149,312 @@ footer a {
     padding-right: 0.3em;
 }
 /* ******************** FOOTER ******************** */
+
+
+
+/* ************************************************ */
+@media only screen and (max-width: 1300px) and (min-width: 768px) {
+ body {
+     max-width: 90%;
+ }
+
+ header {
+     margin-bottom: 0.2%;
+ }
+
+ header h1 {
+     font-size: 2em;
+ }
+
+ #city {
+     width: 20em;
+     height: 2em;
+ }
+ 
+ #submit {
+     height: 2em;
+ }
+
+
+
+#description {
+    margin-top: -1.2em;
+}
+
+#wind {
+    margin-top: -1em;
+}
+
+footer {
+    margin-top: 2%;
+}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 780px) {
+    body {
+        max-width: 80%;
+    } 
+
+    header {
+        margin-bottom: 2%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #city {
+        height: 1.5em;
+        width: 10em;
+        font-size: 1em;
+        font-weight: thin;
+    }
+    
+    #city::placeholder {
+        font-size: 0.7em;
+        font-weight: thin;
+    }
+
+    #submit {
+        height: 1.5em;
+    }
+
+
+ 
+
+    main {
+        margin-top: 8%;
+    }
+
+    main h2 {
+        font-size: 1em;
+    }
+
+    #time {
+        font-size: 0.7em;
+    }
+
+    #temperature {
+        font-size: 8em;
+    }
+
+    #weatherIcon {
+        margin-top: 10%;
+    }
+
+    sup {
+        font-size: 0.2em;
+    }
+
+    #description {
+        font-size: 1em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+    #wind {
+        margin-top: 1em;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+
+    footer img {
+        height: 1em;
+    }
+
+    #copy {
+        font-size: 1em;
+    }
+
+   
+}
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    body {
+        max-width: 90%;
+    } 
+
+    header {
+        margin: 2% 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    input {
+        margin-top: 2%;
+    }
+
+    #city {
+        height: 1.5em;
+        width: 10em;
+        font-size: 1em;
+        font-weight: thin;
+        display: inline-block;
+    }
+    
+    #city::placeholder {
+        font-size: 0.7em;
+        font-weight: thin;
+    }
+
+    #submit {
+        height: 1.5em;
+        display: block;
+        display: inline-block;
+    }
+
+
+
+    main {
+        margin-top: 8%;
+    }
+
+    main h2 {
+        font-size: 1em;
+    }
+
+    #time {
+        font-size: 0.7em;
+    }
+
+    #temperature {
+        font-size: 8em;
+    }
+
+    #weatherIcon {
+        width: 100%;
+    }
+
+    sup {
+        font-size: 0.2em;
+    }
+
+    #description {
+        margin-top: -2em;
+        font-size: 1em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+    #wind {
+        margin-top: 1em;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+
+    footer img {
+        height: 1em;
+    }
+
+    #copy {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+        body {
+        max-width: 90%;
+    } 
+
+    header {
+        margin: 2% 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    input {
+        margin-top: 2%;
+    }
+
+    #city {
+        height: 1.5em;
+        width: 10em;
+        font-size: 1em;
+        font-weight: thin;
+        display: inline-block;
+    }
+    
+    #city::placeholder {
+        font-size: 0.7em;
+        font-weight: thin;
+    }
+
+    #submit {
+        height: 1.5em;
+        display: block;
+        display: inline-block;
+    }
+
+
+
+    main {
+        margin-top: 8%;
+    }
+
+    main h2 {
+        display: block;
+        font-size: 1em;
+    }
+
+    #time {
+        font-size: 0.7em;
+        display: block;
+    }
+
+    #temperature {
+        font-size: 7em;
+    }
+
+    #contLeft {
+        width: 100%;
+    }
+
+    #weatherIcon {
+        margin-top: 2em;
+        margin-left: -3em;
+        width: 100%;
+    }
+
+    sup {
+        font-size: 0.2em;
+    }
+
+    #description {
+        margin-top: -1.8em;
+        font-size: 1em;
+        margin-left: -3em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+    #wind {
+        margin-top: 1em;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+
+    footer img {
+        height: 1em;
+    }
+
+    #copy {
+        font-size: 1em;
+    }
+}

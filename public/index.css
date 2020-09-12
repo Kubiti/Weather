@@ -1,0 +1,460 @@
+/* ******************** GENERAL ******************** */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(123, 123, 231, 0.5), rgb(143, 65, 207, 0.5));
+}
+
+
+/* ******************** GENERAL ******************** */
+
+
+
+/* ******************** HEADER ******************** */
+header {
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5%;
+}
+
+#city {
+    border-radius: 10px;
+    height: 2.5em;
+    width: 30em;
+    padding: 0 2%;
+    margin-right: 0.5%;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+#city::placeholder {
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#submit {
+    border-radius: 10px;
+    height: 2.5em;
+    padding: 0 1%;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+
+
+/* ******************** HEADER ******************** */
+
+
+
+/* ******************** MAIN ******************** */
+
+main article {
+    padding-top: -2%;
+}
+
+main h2 {
+    font-size: 2em;
+}
+
+#location {
+    display: inline-block;
+    margin-top: 2em;
+}
+
+#time {
+    display: inline;
+    margin-left: 0.9%;
+}
+
+#container {
+    display: flex;
+    text-align: center;
+}
+
+#temperature {
+    font-size: 15em;
+}
+
+#contLeft {
+    margin-top: -2em;
+    padding-left: 2em;
+    width: 50%;
+}
+
+#weatherIcon {
+    width: 50%;
+}
+
+#description {
+    font-size: 2em;
+    margin-top: -2em;
+    text-transform: capitalize;
+}
+
+sup {
+    position: relative;
+    bottom: 2rem;
+    font-size: 4rem;
+}
+
+article p {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+#wind {
+    margin-top: 1.2em;
+}
+
+/* ******************** MAIN ******************** */
+
+
+
+/* ******************** FOOTER ******************** */
+footer {
+    margin-top: 1%;
+}
+
+footer img {
+    height: 2em;
+}
+
+#copy {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+#social {
+    float: right;
+}
+
+footer a {
+    padding-right: 0.3em;
+}
+/* ******************** FOOTER ******************** */
+
+
+
+/* ************************************************ */
+@media only screen and (max-width: 1300px) and (min-width: 768px) {
+ body {
+     max-width: 90%;
+ }
+
+ header {
+     margin-bottom: 0.2%;
+ }
+
+ header h1 {
+     font-size: 2em;
+ }
+
+ #city {
+     width: 20em;
+     height: 2em;
+ }
+ 
+ #submit {
+     height: 2em;
+ }
+
+
+
+#description {
+    margin-top: -1.2em;
+}
+
+#wind {
+    margin-top: -1em;
+}
+
+footer {
+    margin-top: 2%;
+}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 780px) {
+    body {
+        max-width: 80%;
+    } 
+
+    header {
+        margin-bottom: 2%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #city {
+        height: 1.5em;
+        width: 10em;
+        font-size: 1em;
+        font-weight: thin;
+    }
+    
+    #city::placeholder {
+        font-size: 0.7em;
+        font-weight: thin;
+    }
+
+    #submit {
+        height: 1.5em;
+    }
+
+
+ 
+
+    main {
+        margin-top: 8%;
+    }
+
+    main h2 {
+        font-size: 1em;
+    }
+
+    #time {
+        font-size: 0.7em;
+    }
+
+    #temperature {
+        font-size: 8em;
+    }
+
+    #weatherIcon {
+        margin-top: 10%;
+    }
+
+    sup {
+        font-size: 0.2em;
+    }
+
+    #description {
+        font-size: 1em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+    #wind {
+        margin-top: 1em;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+
+    footer img {
+        height: 1em;
+    }
+
+    #copy {
+        font-size: 1em;
+    }
+
+   
+}
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    body {
+        max-width: 90%;
+    } 
+
+    header {
+        margin: 2% 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    input {
+        margin-top: 2%;
+    }
+
+    #city {
+        height: 1.5em;
+        width: 10em;
+        font-size: 1em;
+        font-weight: thin;
+        display: inline-block;
+    }
+    
+    #city::placeholder {
+        font-size: 0.7em;
+        font-weight: thin;
+    }
+
+    #submit {
+        height: 1.5em;
+        display: block;
+        display: inline-block;
+    }
+
+
+
+    main {
+        margin-top: 8%;
+    }
+
+    main h2 {
+        font-size: 1em;
+    }
+
+    #time {
+        font-size: 0.7em;
+    }
+
+    #temperature {
+        font-size: 8em;
+    }
+
+    #weatherIcon {
+        width: 100%;
+    }
+
+    sup {
+        font-size: 0.2em;
+    }
+
+    #description {
+        margin-top: -2em;
+        font-size: 1em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+    #wind {
+        margin-top: 1em;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+
+    footer img {
+        height: 1em;
+    }
+
+    #copy {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+        body {
+        max-width: 90%;
+    } 
+
+    header {
+        margin: 2% 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    input {
+        margin-top: 2%;
+    }
+
+    #city {
+        height: 1.5em;
+        width: 10em;
+        font-size: 1em;
+        font-weight: thin;
+        display: inline-block;
+    }
+    
+    #city::placeholder {
+        font-size: 0.7em;
+        font-weight: thin;
+    }
+
+    #submit {
+        height: 1.5em;
+        display: block;
+        display: inline-block;
+    }
+
+
+
+    main {
+        margin-top: 8%;
+    }
+
+    main h2 {
+        display: block;
+        font-size: 1em;
+    }
+
+    #time {
+        font-size: 0.7em;
+        display: block;
+    }
+
+    #temperature {
+        font-size: 7em;
+    }
+
+    #contLeft {
+        width: 100%;
+    }
+
+    #weatherIcon {
+        margin-top: 2em;
+        margin-left: -3em;
+        width: 100%;
+    }
+
+    sup {
+        font-size: 0.2em;
+    }
+
+    #description {
+        margin-top: -1.8em;
+        font-size: 1em;
+        margin-left: -3em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+
+    #wind {
+        margin-top: 1em;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+
+    footer img {
+        height: 1em;
+    }
+
+    #copy {
+        font-size: 1em;
+    }
+}

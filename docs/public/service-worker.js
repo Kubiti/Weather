@@ -1,8 +1,6 @@
 let cacheName = 'v1';
 let cacheFiles = [
     './',
-    './assets',
-    './assets/weather_icons',
     './site.webmanifest',
     './index.html',
     './index.js',
